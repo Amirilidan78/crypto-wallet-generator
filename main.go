@@ -1,7 +1,5 @@
-package cryptoWalletGenerator
+package crypto_wallet_generator
 
+func main() {
 
-func Generate() string {
-
-	return "Ok!"
 }

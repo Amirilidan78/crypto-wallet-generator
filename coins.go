@@ -1,0 +1,101 @@
+package crypto_wallet_generator
+
+// #include <TrustWalletCore/TWCoinType.h>
+import "C"
+
+type Coin uint32
+
+const (
+	Aeternity            Coin = C.TWCoinTypeAeternity
+	Aion                      = C.TWCoinTypeAion
+	Binance                   = C.TWCoinTypeBinance
+	Bitcoin                   = C.TWCoinTypeBitcoin
+	BitcoinCash               = C.TWCoinTypeBitcoinCash
+	BitcoinGold               = C.TWCoinTypeBitcoinGold
+	Callisto                  = C.TWCoinTypeCallisto
+	Cardano                   = C.TWCoinTypeCardano
+	Cosmos                    = C.TWCoinTypeCosmos
+	Dash                      = C.TWCoinTypeDash
+	Decred                    = C.TWCoinTypeDecred
+	DigiByte                  = C.TWCoinTypeDigiByte
+	Dogecoin                  = C.TWCoinTypeDogecoin
+	EOS                       = C.TWCoinTypeEOS
+	Ethereum                  = C.TWCoinTypeEthereum
+	EthereumClassic           = C.TWCoinTypeEthereumClassic
+	FIO                       = C.TWCoinTypeFIO
+	GoChain                   = C.TWCoinTypeGoChain
+	Groestlcoin               = C.TWCoinTypeGroestlcoin
+	ICON                      = C.TWCoinTypeICON
+	IoTeX                     = C.TWCoinTypeIoTeX
+	Kava                      = C.TWCoinTypeKava
+	Kin                       = C.TWCoinTypeKin
+	Litecoin                  = C.TWCoinTypeLitecoin
+	Monacoin                  = C.TWCoinTypeMonacoin
+	Nebulas                   = C.TWCoinTypeNebulas
+	NULS                      = C.TWCoinTypeNULS
+	Nano                      = C.TWCoinTypeNano
+	NEAR                      = C.TWCoinTypeNEAR
+	Nimiq                     = C.TWCoinTypeNimiq
+	Ontology                  = C.TWCoinTypeOntology
+	POANetwork                = C.TWCoinTypePOANetwork
+	Qtum                      = C.TWCoinTypeQtum
+	XRP                       = C.TWCoinTypeXRP
+	Solana                    = C.TWCoinTypeSolana
+	Stellar                   = C.TWCoinTypeStellar
+	Tezos                     = C.TWCoinTypeTezos
+	Theta                     = C.TWCoinTypeTheta
+	ThunderToken              = C.TWCoinTypeThunderToken
+	NEO                       = C.TWCoinTypeNEO
+	TomoChain                 = C.TWCoinTypeTomoChain
+	Tron                      = C.TWCoinTypeTron
+	VeChain                   = C.TWCoinTypeVeChain
+	Viacoin                   = C.TWCoinTypeViacoin
+	Wanchain                  = C.TWCoinTypeWanchain
+	Zcash                     = C.TWCoinTypeZcash
+	Firo                      = C.TWCoinTypeFiro
+	Zilliqa                   = C.TWCoinTypeZilliqa
+	Zelcash                   = C.TWCoinTypeZelcash
+	Ravencoin                 = C.TWCoinTypeRavencoin
+	Waves                     = C.TWCoinTypeWaves
+	Terra                     = C.TWCoinTypeTerra
+	TerraV2                   = C.TWCoinTypeTerraV2
+	Harmony                   = C.TWCoinTypeHarmony
+	Algorand                  = C.TWCoinTypeAlgorand
+	Kusama                    = C.TWCoinTypeKusama
+	Polkadot                  = C.TWCoinTypePolkadot
+	Filecoin                  = C.TWCoinTypeFilecoin
+	Elrond                    = C.TWCoinTypeElrond
+	BandChain                 = C.TWCoinTypeBandChain
+	SmartChainLegacy          = C.TWCoinTypeSmartChainLegacy
+	SmartChain                = C.TWCoinTypeSmartChain
+	Oasis                     = C.TWCoinTypeOasis
+	Polygon                   = C.TWCoinTypePolygon
+	THORChain                 = C.TWCoinTypeTHORChain
+	Bluzelle                  = C.TWCoinTypeBluzelle
+	Optimism                  = C.TWCoinTypeOptimism
+	Arbitrum                  = C.TWCoinTypeArbitrum
+	ECOChain                  = C.TWCoinTypeECOChain
+	AvalancheCChain           = C.TWCoinTypeAvalancheCChain
+	XDai                      = C.TWCoinTypeXDai
+	Fantom                    = C.TWCoinTypeFantom
+	CryptoOrg                 = C.TWCoinTypeCryptoOrg
+	Celo                      = C.TWCoinTypeCelo
+	Ronin                     = C.TWCoinTypeRonin
+	Osmosis                   = C.TWCoinTypeOsmosis
+	ECash                     = C.TWCoinTypeECash
+	CronosChain               = C.TWCoinTypeCronosChain
+	SmartBitcoinCash          = C.TWCoinTypeSmartBitcoinCash
+	KuCoinCommunityChain      = C.TWCoinTypeKuCoinCommunityChain
+	Boba                      = C.TWCoinTypeBoba
+	Metis                     = C.TWCoinTypeMetis
+	Aurora                    = C.TWCoinTypeAurora
+	Evmos                     = C.TWCoinTypeEvmos
+	NativeEvmos               = C.TWCoinTypeNativeEvmos
+	Moonriver                 = C.TWCoinTypeMoonriver
+	Moonbeam                  = C.TWCoinTypeMoonbeam
+	KavaEvm                   = C.TWCoinTypeKavaEvm
+	Klaytn                    = C.TWCoinTypeKlaytn
+	Meter                     = C.TWCoinTypeMeter
+	OKXChain                  = C.TWCoinTypeOKXChain
+	Nervos                    = C.TWCoinTypeNervos
+)
